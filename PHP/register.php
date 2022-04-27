@@ -290,9 +290,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     </body>
     <script type="text/javascript" defer>
         // this if statement turns off the "Confirm Form Resubmission" and prevents multiple form submissions after a successful form submission
-        // if (window.history.replaceState) {
-        //     window.history.replaceState(null, null, window.location.href);
-        // }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
 
         $(document).ready(function() {
             disableRepFields();
