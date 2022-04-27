@@ -57,8 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     && $patient_fields["phone"]  != -1
     && $patient_fields["date_of_birth"]  != -1) { //register user in db
  
-        echo "Registering user <br>";
-
         //arguments for patient_info query
         $patient_info_arr = array( $patient_fields["patient_sin"], //1
             $patient_fields["address"], //2
@@ -104,9 +102,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         )
         INSERT INTO User_account (username, password, type_id, patient_id) 
         VALUES ($2, $3, 0, (SELECT patient_id FROM P));";
-        echo "query text";
-        echo $patient_info_query;
-        echo $patient_and_user_account_query;
 
         pg_query($dbconn, 'BEGIN'); // begins transaction
         $patient_info_result = pg_query_params($dbconn, 
