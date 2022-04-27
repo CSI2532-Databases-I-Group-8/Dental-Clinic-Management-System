@@ -139,11 +139,11 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     }
 
     // Shows all form input that was supplied for debugging
-    echo $username . " ". $password . " " . $password_verify; 
-    foreach ($patient_fields as $p) {
-        echo '<br>';
-        echo $p;
-    }
+    // echo $username . " ". $password . " " . $password_verify; 
+    // foreach ($patient_fields as $p) {
+    //     echo '<br>';
+    //     echo $p;
+    // }
 }
 
 ?>
