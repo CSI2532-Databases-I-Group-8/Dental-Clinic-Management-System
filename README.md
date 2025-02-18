@@ -1,6 +1,6 @@
 # Overview
 
-- Dental clinic website: https://dental-clinic-backend-hfkr.onrender.com/index.php
+- Dental clinic functional website: https://dental-clinic-management-system-n0em.onrender.com/index.php
 - Database link: https://console.neon.tech/app/projects/round-butterfly-70109006/branches/br-patient-tooth-a4gpouvi/tables?database=neondb
 - Demo video (en français): https://www.youtube.com/watch?v=8031YFqOKfg
 
